@@ -13,20 +13,20 @@ int main(int argc, char *argv[]) {
     int maxrand = 100;
 
     if (argc != 3) {
-        printf("Incorrect usage. You provided %d arguments. The correct number of arguments is 2.\n", argc - 1);
+        printf("Incorrect usage. You provided %d arguments. The correct number of arguments is 2\n", argc - 1);
         return 1; 
     }
 
     char *endptr;
     long num1 = strtol(argv[1], &endptr, 10);
     if (*endptr != '\0' || num1 <= 0) {
-        printf("Incorrect usage. The first parameter must be a positive integer (number of rows).\n");
+        printf("Incorrect usage. The first parameter must be a positive integer (number of rows)\n");
         return 1;
     }
 
     long num2 = strtol(argv[2], &endptr, 10);
     if (*endptr != '\0' || num2 <= 0) {
-        printf("Incorrect usage. The second parameter must be a positive integer (number of columns).\n");
+        printf("Incorrect usage. The second parameter must be a positive integer (number of columns)\n");
         return 1;
     }
 
